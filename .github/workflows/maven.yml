@@ -38,5 +38,8 @@ jobs:
     # Step 6: Performance Tests
     - name: Run Performance Tests
       run: mvn verify -DtestType=performance
+   # Step 8: Docker Build
+    - name: Build Docker Image
+      run: docker build -t Dockerfile:latest .
     
     
